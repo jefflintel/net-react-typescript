@@ -1,0 +1,15 @@
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\bin\Debug\net8.0\Persistence.deps.json
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\bin\Debug\net8.0\Persistence.dll
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\bin\Debug\net8.0\Persistence.pdb
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\bin\Debug\net8.0\Domain.dll
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\bin\Debug\net8.0\Domain.pdb
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\obj\Debug\net8.0\Persistence.csproj.AssemblyReference.cache
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\obj\Debug\net8.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfoInputs.cache
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfo.cs
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\obj\Debug\net8.0\Persistence.csproj.CoreCompileInputs.cache
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\obj\Debug\net8.0\Persiste.61C28332.Up2Date
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\obj\Debug\net8.0\Persistence.dll
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\obj\Debug\net8.0\refint\Persistence.dll
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\obj\Debug\net8.0\Persistence.pdb
+C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\obj\Debug\net8.0\ref\Persistence.dll
