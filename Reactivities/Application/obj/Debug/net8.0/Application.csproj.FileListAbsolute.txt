@@ -15,3 +15,4 @@ C:\udemy\react-typescript\net-react-typescript\Reactivities\Application\obj\Debu
 C:\udemy\react-typescript\net-react-typescript\Reactivities\Application\obj\Debug\net8.0\refint\Application.dll
 C:\udemy\react-typescript\net-react-typescript\Reactivities\Application\obj\Debug\net8.0\Application.pdb
 C:\udemy\react-typescript\net-react-typescript\Reactivities\Application\obj\Debug\net8.0\ref\Application.dll
+C:\udemy\react-typescript\net-react-typescript\reactivities\Application\obj\Debug\net8.0\Application.sourcelink.json

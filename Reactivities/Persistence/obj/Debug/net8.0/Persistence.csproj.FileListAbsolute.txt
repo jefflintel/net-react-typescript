@@ -13,3 +13,4 @@ C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\obj\Debu
 C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\obj\Debug\net8.0\refint\Persistence.dll
 C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\obj\Debug\net8.0\Persistence.pdb
 C:\udemy\react-typescript\net-react-typescript\Reactivities\Persistence\obj\Debug\net8.0\ref\Persistence.dll
+C:\udemy\react-typescript\net-react-typescript\reactivities\Persistence\obj\Debug\net8.0\Persistence.sourcelink.json
