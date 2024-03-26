@@ -1,9 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "8LG8WierklNE9iy1Yqom4OUBcUNLG3Pt5oFsdh/u+7U8XuKmHTwBxBNuPeePjUe6W7lllp761J3tvytf1h9O2w==",
+  "dgSpecHash": "oVckl0Fq64fbQCS8GHKnmwMEFVotZfjcMz1zCEVl//LYXUMqyZ/u47pInBk0LOHq+2FfRuqnieHmh5p73NbdbQ==",
   "success": true,
   "projectFilePath": "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jeffl\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\jeffl\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\jeffl\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\jeffl\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\jeffl\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\jeffl\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.3\\microsoft.data.sqlite.core.8.0.3.nupkg.sha512",
     "C:\\Users\\jeffl\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.3\\microsoft.entityframeworkcore.8.0.3.nupkg.sha512",
     "C:\\Users\\jeffl\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.3\\microsoft.entityframeworkcore.abstractions.8.0.3.nupkg.sha512",
