@@ -8,6 +8,7 @@ interface Props {
   activities: Activity[];
   selectedActivity: Activity | undefined;
   editMode: boolean;
+  submitting: boolean;
   selectActivity: (id: string) => void;
   cancelSelectActivity: () => void;
   openForm: (id: string) => void;
@@ -16,11 +17,24 @@ interface Props {
   deleteActivity: (id: string) => void;
 }
 
-export const ActivityDashboard = ({ activities, selectedActivity, editMode, selectActivity, cancelSelectActivity, openForm, closeForm, createOrEdit, deleteActivity }: Props) => {
+export const ActivityDashboard = ({ activities, 
+  selectedActivity, 
+  editMode,
+  submitting, 
+  selectActivity, 
+  cancelSelectActivity, 
+  openForm, 
+  closeForm, 
+  createOrEdit, 
+  deleteActivity }: Props) => {
   return (
     <Grid>
       <Grid.Column width={"10"}>
-        <ActivityList activities={activities} selectActivity={selectActivity} deleteActivity={deleteActivity}/>
+        <ActivityList 
+          activities={activities} 
+          selectActivity={selectActivity} 
+          deleteActivity={deleteActivity}
+          submitting={submitting}/>
       </Grid.Column>
       <Grid.Column width={"6"}>
         {selectedActivity && !editMode &&
@@ -30,7 +44,11 @@ export const ActivityDashboard = ({ activities, selectedActivity, editMode, sele
             openForm={openForm}
             />}
         {editMode &&
-        <ActivityForm closeForm={closeForm} activity={selectedActivity} createOrEdit={createOrEdit}/>}
+        <ActivityForm 
+            closeForm={closeForm} 
+            activity={selectedActivity} 
+            createOrEdit={createOrEdit}
+            submitting={submitting}/>}
       </Grid.Column>
     </Grid>
   );

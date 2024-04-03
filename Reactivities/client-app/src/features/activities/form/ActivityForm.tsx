@@ -4,12 +4,14 @@ import { Activity } from "../../../app/models/activity";
 
 interface Props {
   activity: Activity | undefined;
+  submitting: boolean;
   closeForm: () => void;
   createOrEdit: (activity: Activity) => void;
 }
 
 export const ActivityForm = ({
   activity: selectedActivity,
+  submitting,
   closeForm,
   createOrEdit,
 }: Props) => {
@@ -58,6 +60,7 @@ export const ActivityForm = ({
           onChange={inputChangeHandler}
         />
         <Form.Input
+          type="date"
           placeholder="Date"
           value={activity.date}
           name="date"
@@ -75,7 +78,12 @@ export const ActivityForm = ({
           name="venue"
           onChange={inputChangeHandler}
         />
-        <Button floated="right" positive type="submit" content="Submit" />
+        <Button 
+          loading={submitting} 
+          floated="right" 
+          positive 
+          type="submit" 
+          content="Submit" />
         <Button
           onClick={closeForm}
           floated="right"
