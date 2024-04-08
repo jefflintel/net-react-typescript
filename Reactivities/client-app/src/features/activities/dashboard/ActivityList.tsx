@@ -1,54 +1,57 @@
 import { SyntheticEvent, useState } from "react";
-import { Button, Item, Label, Segment } from "semantic-ui-react"
-import { Activity } from "../../../app/models/activity"
+import { Button, Item, Label, Segment } from "semantic-ui-react";
+import { useStore } from "../../../app/stores/store";
+import { observer } from "mobx-react-lite";
 
-interface Props {
-    activities: Activity[];
-    submitting: boolean;
-    selectActivity: (id: string) => void;
-    deleteActivity: (id: string) => void;
-}
+export default observer(function ActivityList() {
+  const { activityStore } = useStore();
+  const { deleteActivity, activitiesByDate, loading } = activityStore;
 
-export const ActivityList = ({activities, submitting, selectActivity, deleteActivity }: Props) => {
+  const [target, setTarget] = useState("");
 
-    const [target, setTarget] = useState("");
+  const activityDeleteHandler = (
+    event: SyntheticEvent<HTMLButtonElement>,
+    id: string
+  ) => {
+    setTarget(event.currentTarget.name);
+    deleteActivity(id);
+  };
 
-    const activityDeleteHandler = (event: SyntheticEvent<HTMLButtonElement>, id: string) => {
-        setTarget(event.currentTarget.name);
-        deleteActivity(id)
-    }
-
-    return (
-        <Segment>
-            <Item.Group divided>
-                {activities.map(activity => (
-                    <Item key={activity.id}>
-                        <Item.Content>
-                            <Item.Header as="a">{activity.title}</Item.Header>
-                            <Item.Meta>{activity.date}</Item.Meta>
-                            <Item.Description>
-                                <div>{activity.description}</div>
-                                <div>{activity.city}, {activity.venue}</div>
-                            </Item.Description>
-                            <Item.Extra>
-                                <Button 
-                                    onClick={() => selectActivity(activity.id)} 
-                                    floated="right" 
-                                    content="View" 
-                                    color="blue" />
-                                <Button
-                                    name={activity.id} 
-                                    loading={submitting && target === activity.id} 
-                                    onClick={(event) => activityDeleteHandler(event, activity.id)} 
-                                    floated="right" 
-                                    content="Delete" 
-                                    color="red" />
-                                <Label basic content={activity.category} />
-                            </Item.Extra>
-                        </Item.Content>
-                    </Item>
-                ))}
-            </Item.Group>
-        </Segment>
-    )
-}
+  return (
+    <Segment>
+      <Item.Group divided>
+        {activitiesByDate.map((activity) => (
+          <Item key={activity.id}>
+            <Item.Content>
+              <Item.Header as="a">{activity.title}</Item.Header>
+              <Item.Meta>{activity.date}</Item.Meta>
+              <Item.Description>
+                <div>{activity.description}</div>
+                <div>
+                  {activity.city}, {activity.venue}
+                </div>
+              </Item.Description>
+              <Item.Extra>
+                <Button
+                  onClick={() => activityStore.selectActivity(activity.id)}
+                  floated="right"
+                  content="View"
+                  color="blue"
+                />
+                <Button
+                  name={activity.id}
+                  loading={loading && target === activity.id}
+                  onClick={(event) => activityDeleteHandler(event, activity.id)}
+                  floated="right"
+                  content="Delete"
+                  color="red"
+                />
+                <Label basic content={activity.category} />
+              </Item.Extra>
+            </Item.Content>
+          </Item>
+        ))}
+      </Item.Group>
+    </Segment>
+  );
+});
