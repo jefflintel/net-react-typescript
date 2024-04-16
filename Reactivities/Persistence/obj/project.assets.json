@@ -1233,8 +1233,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\udemy\\react-typescript\\net-react-typescript\\Reactivities\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\udemy\\react-typescript\\net-react-typescript\\Reactivities\\Domain\\Domain.csproj"
+            "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\Domain\\Domain.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H01W20Gy4Rkn4aVLnEqljr/fcK8EV9AOGdyODWmhNXC2ikcV2wrhi75REtH7Zdp8bbAdat8itVa05jMuQ8OUuw==",
+  "dgSpecHash": "njmDG5TtZHesiwNXQJNf3ZCfZ4G7I3x2oQZQ0hr1nDTkogSxkf332KC1Usjag+Q8P0fwD3s4v/Iikitjcb0Rdg==",
   "success": true,
-  "projectFilePath": "C:\\udemy\\react-typescript\\net-react-typescript\\Reactivities\\Application\\Application.csproj",
+  "projectFilePath": "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jeffl\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\jeffl\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
