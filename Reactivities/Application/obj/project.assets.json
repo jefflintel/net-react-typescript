@@ -1535,11 +1535,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\application\\Application.csproj",
+      "projectUniqueName": "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\application\\Application.csproj",
+      "projectPath": "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\jeffl\\.nuget\\packages\\",
-      "outputPath": "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\application\\obj\\",
+      "outputPath": "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1563,8 +1563,8 @@
             "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\Domain\\Domain.csproj": {
               "projectPath": "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\Domain\\Domain.csproj"
             },
-            "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\Persistence\\Persistence.csproj"
+            "C:\\udemy\\react-typescript\\net-react-typescript\\Reactivities\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\udemy\\react-typescript\\net-react-typescript\\Reactivities\\Persistence\\Persistence.csproj"
             }
           }
         }
