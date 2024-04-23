@@ -39,6 +39,10 @@ body {
   font-weight: normal;
 }
 
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
 .masthead h2 {
   font-size: 1.7em;
   font-weight: normal;
