@@ -10,3 +10,4 @@ C:\udemy\react-typescript\net-react-typescript\Reactivities\Domain\obj\Debug\net
 C:\udemy\react-typescript\net-react-typescript\Reactivities\Domain\obj\Debug\net8.0\Domain.pdb
 C:\udemy\react-typescript\net-react-typescript\Reactivities\Domain\obj\Debug\net8.0\ref\Domain.dll
 C:\udemy\react-typescript\net-react-typescript\reactivities\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\udemy\react-typescript\net-react-typescript\reactivities\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
