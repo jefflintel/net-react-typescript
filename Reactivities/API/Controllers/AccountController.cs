@@ -44,12 +44,14 @@ namespace API.Controllers
         {
             if (await _userManager.Users.AnyAsync(x => x.UserName == registerDto.Username))
             {
-                return BadRequest("Username already in use");
+                ModelState.AddModelError("username", "Username already in use");
+                return ValidationProblem();
             }
 
-             if (await _userManager.Users.AnyAsync(x => x.Email == registerDto.Email))
+            if (await _userManager.Users.AnyAsync(x => x.Email == registerDto.Email))
             {
-                return BadRequest("Email already in use");
+                ModelState.AddModelError("email", "Email already in use");
+                return  ValidationProblem();
             }
 
             var user = new AppUser
@@ -69,7 +71,7 @@ namespace API.Controllers
             return BadRequest(result.Errors);
         }
 
-       
+
         [Authorize]
         [HttpGet]
         public async Task<ActionResult<UserDto>> GetCurrentUser()
@@ -79,7 +81,7 @@ namespace API.Controllers
             return CreateUserObject(user);
         }
 
-         private UserDto CreateUserObject(AppUser user)
+        private UserDto CreateUserObject(AppUser user)
         {
             return new UserDto
             {
