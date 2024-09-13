@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Application.Activities;
 using Application.Core;
 using AutoMapper;
@@ -18,6 +14,7 @@ namespace Application.Profiles
         {
             public string Username { get; set; }
             public string Predicate { get; set; }
+            public ActivityParams Params { get; set; }
         }
 
         public class Handler : IRequestHandler<Query, Result<List<UserActivityDto>>>
@@ -41,9 +38,9 @@ namespace Application.Profiles
 
                 query = request.Predicate switch
                 {
-                    "past" => query.Where(a => a.Date <= DateTime.Now),
+                    "past" => query.Where(a => a.Date <= DateTime.UtcNow),
                     "hosting" => query.Where(a => a.HostUsername == request.Username),
-                    _ => query.Where(a => a.Date >= DateTime.Now)
+                    _ => query.Where(a => a.Date >= DateTime.UtcNow)
                 };
 
                 var activities = await query.ToListAsync();

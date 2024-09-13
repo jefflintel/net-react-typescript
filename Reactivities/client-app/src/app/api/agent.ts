@@ -4,7 +4,8 @@ import { toast } from "react-toastify";
 import { router } from "../router/Routes";
 import { store } from "../stores/store";
 import { User, UserFormValues } from "../models/user";
-import { Photo, Profile } from "../models/profile";
+import { Photo, Profile, UserActivity } from "../models/profile";
+import { PaginatedResults } from "../models/pagination";
 
 const sleep = (delay: number) => {
   return new Promise((resolve) => {
@@ -23,6 +24,11 @@ axios.interceptors.request.use((config) => {
 axios.interceptors.response.use(
   async (res) => {
     await sleep(1000);
+    const pagination = res.headers["pagination"];
+    if (pagination) {
+      res.data = new PaginatedResults(res.data, JSON.parse(pagination));
+      return res as AxiosResponse<PaginatedResults<unknown>>;
+    }
     return res;
   },
   (error: AxiosError) => {
@@ -77,7 +83,8 @@ const requests = {
 };
 
 const Activities = {
-  list: () => requests.get<Activity[]>("/activities"),
+  list: (params: URLSearchParams) => axios.get<PaginatedResults<Activity[]>>("/activities", {params})
+    .then(responseBody),
   details: (id: string) => requests.get<Activity>(`/activities/${id}`),
   create: (activity: ActivityFormValues) =>
     requests.post<void>("/activities", activity),
@@ -107,7 +114,9 @@ const Profiles = {
   deletePhoto: (id: string) => requests.del(`/photos/${id}`),
   updateFollowing: (username: string) => requests.post(`/follow/${username}`, {}),
   updateProfile: (profile: Partial<Profile>) => requests.put(`/profiles`, profile),
-  listFollowings: (username: string, predicate: string) => requests.get<Profile[]>(`/follow/${username}?predicate=${predicate}`)
+  listFollowings: (username: string, predicate: string) => requests.get<Profile[]>(`/follow/${username}?predicate=${predicate}`),
+  listActivities: (username: string, predicate: string) =>
+    requests.get<UserActivity[]>(`/profiles/${username}/activities?predicate=${predicate}`)
 };
 
 
