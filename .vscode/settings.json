@@ -1,1 +1,4 @@
-{}
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/e378ae08-f9af-4b66-99e3-100d29a8e5f7/resourceGroups/Reactivities-group/providers/Microsoft.Web/sites/lintel-reactivities",
+    "appService.deploySubpath": "Reactivities\\API\\bin\\Publish"
+}

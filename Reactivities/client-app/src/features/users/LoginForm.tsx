@@ -12,12 +12,17 @@ export const LoginForm = observer(() => {
       onSubmit={(values, { setErrors }) =>
         userStore
           .login(values)
-          .catch((error) => setErrors({ error: "Invalid email or password" }))
+          .catch((_) => setErrors({ error: "Invalid email or password" }))
       }
     >
       {({ handleSubmit, isSubmitting, errors }) => (
         <Form className="ui form" onSubmit={handleSubmit} autoComplete="off">
-          <Header as="h2" content="Hi! Login to Reactivities" color="teal" textAlign="center" />
+          <Header
+            as="h2"
+            content="Hi! Login to Reactivities"
+            color="teal"
+            textAlign="center"
+          />
           <CustomTextInput placeholder="email" name="email" />
           <CustomTextInput
             placeholder="password"

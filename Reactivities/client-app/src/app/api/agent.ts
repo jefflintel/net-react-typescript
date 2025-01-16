@@ -13,7 +13,7 @@ const sleep = (delay: number) => {
   });
 };
 
-axios.defaults.baseURL = "http://localhost:5000/api";
+axios.defaults.baseURL = import.meta.env.VITE_API_URL;
 
 axios.interceptors.request.use((config) => {
   const token = store.commonStore.token;
@@ -23,7 +23,7 @@ axios.interceptors.request.use((config) => {
 
 axios.interceptors.response.use(
   async (res) => {
-    await sleep(1000);
+    if (import.meta.env.dev) await sleep(1000);
     const pagination = res.headers["pagination"];
     if (pagination) {
       res.data = new PaginatedResults(res.data, JSON.parse(pagination));
