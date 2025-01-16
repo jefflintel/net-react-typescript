@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "12/DM48c+gItCS83YdDbwT1cup8sSssRbOz3DNtW/EhIryrWdRTUgKmxmoNRqRphPl5rrsnmTJCpqSvik7h7hg==",
+  "dgSpecHash": "H1l7kWAEgjO1tZZzDSewd1lEoUjtD+lXuJbVKUAnyR5N27N7s4nu8HqnXNARLHoMA7WNb3jLm/ag5xaPdYz2pw==",
   "success": true,
-  "projectFilePath": "C:\\udemy\\react-typescript\\net-react-typescript\\reactivities\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\udemy\\react-typescript\\net-react-typescript\\Reactivities\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jeffl\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.4\\microsoft.aspnetcore.cryptography.internal.8.0.4.nupkg.sha512",
     "C:\\Users\\jeffl\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.4\\microsoft.aspnetcore.cryptography.keyderivation.8.0.4.nupkg.sha512",
